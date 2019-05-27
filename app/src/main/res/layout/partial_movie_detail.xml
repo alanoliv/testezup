@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/constraintLayoutContent"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+            android:text="@string/premiere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewPremiere" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" android:layout_marginTop="16dp" android:textSize="16dp"
+            android:textColor="@color/design_default_color_primary"/>
+    <TextView
+            android:text="2000"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewYear" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp" android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+            app:layout_constraintStart_toEndOf="@+id/textViewPremiere" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" android:layout_marginRight="16dp" android:textSize="16dp"/>
+    <TextView
+            android:text="ImdbID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewId"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPremiere" android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" android:textSize="16dp"
+            android:textColor="@color/design_default_color_primary"/>
+    <TextView
+            android:text="1324321"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewImdbID"
+            app:layout_constraintTop_toBottomOf="@+id/textViewYear" android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/textViewYear"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp" android:textSize="16dp"/>
+    <TextView
+            android:text="Tipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewTitleType"
+            app:layout_constraintTop_toBottomOf="@+id/textViewId" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_marginTop="16dp"
+            android:textSize="16dp" android:textColor="@color/design_default_color_primary"/>
+    <TextView
+            android:text="Movie"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewType"
+            app:layout_constraintTop_toBottomOf="@+id/textViewImdbID"
+            app:layout_constraintStart_toStartOf="@+id/textViewImdbID"
+            android:layout_marginTop="16dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp" android:textSize="16dp"/>
+</android.support.constraint.ConstraintLayout>
