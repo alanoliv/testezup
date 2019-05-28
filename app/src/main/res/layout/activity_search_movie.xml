@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".movie.SearchMovieActivity">
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/Theme.AppCompat"
+            app:layout_collapseMode="pin"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    <View
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:id="@+id/view"
+            android:background="@color/colorPrimary"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <SearchView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:id="@+id/searchViewMovies"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintStart_toStartOf="@+id/view" android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view" android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"/>
+    <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/progressBarSearch"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/searchViewMovies" android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"/>
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/recyclerViewMyMovie" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewMyMovies"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewEmpytMyMovie"
+            android:text="@string/empyt_my_movies"
+            android:textAlignment="center"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintTop_toBottomOf="@+id/textViewMyMovies"
+            android:layout_marginTop="16dp"/>
+    <TextView
+            android:text="@string/my_movies"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewMyMovies"
+            app:layout_constraintTop_toBottomOf="@+id/progressBarSearch" android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp" android:textSize="18sp" android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+</android.support.constraint.ConstraintLayout>

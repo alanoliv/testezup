@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TestZup</string>
+    <string name="omdb_api_key">89edc639</string>
+    <string name="error_default">ocorreu um erro</string>
+    <string name="empty_list">lista vazia</string>
+    <string name="ok">ok</string>
+    <string name="premiere">Laçamento</string>
+    <string name="related">Relacionados</string>
+    <string name="zup_movies">Zup Movies</string>
+    <string name="save_success">salvo com sucesso!</string>
+    <string name="empyt_my_movies">Você ainda não tem nenhum filme salvo</string>
+    <string name="my_movies">Meus filmes</string>
+</resources>
